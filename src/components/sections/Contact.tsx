@@ -24,7 +24,7 @@ export function Contact() {
 
   return (
     <div
-      className="h-[60vh] py-20 pl-12 pr-8 lg:flex lg:h-[80vh] lg:flex-row lg:items-center lg:justify-between lg:px-12"
+      className="min-h-[60vh] py-20 pl-12 pr-8 lg:flex lg:h-[80vh] lg:flex-row lg:items-center lg:justify-between lg:px-12"
       id="contact"
     >
       <div>
