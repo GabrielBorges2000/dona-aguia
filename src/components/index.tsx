@@ -1,0 +1,7 @@
+export { About } from '@/components/sections/About'
+export { Contact } from '@/components/sections/Contact'
+export { Feedback } from '@/components/sections/Feedback'
+export { Header } from '@/components/Header'
+export { Service } from '@/components/sections/Service'
+export { Start } from '@/components/sections/Start'
+export { Footer } from '@/components/Footer'
