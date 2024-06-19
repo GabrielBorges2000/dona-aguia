@@ -1,9 +1,7 @@
 import { AtSign, MapPinned, Phone, Send } from 'lucide-react'
+import Link from 'next/link'
 
 export function Contact() {
-  const messageWhatsapp =
-    'Olá, tudo bem? Gostaria de mais informações sobre as roupas infantis.'
-
   const info = [
     {
       id: 1,
@@ -36,15 +34,15 @@ export function Contact() {
           suas críticas e sugestões.
         </p>
 
-        <a
+        <Link
           className="mb-16 inline-flex flex-row items-center gap-4 rounded-md bg-amber-400 px-8 py-3 text-xl font-semibold text-black hover:bg-amber-500 hover:text-white"
-          href={`https://wa.me/+5511973348516?text=${messageWhatsapp}`}
+          href={`https://wa.me/${process.env.PHONE_WHATSAPP}?text=${process.env.MESSAGE_WHATSAPP}`}
           target="_blank"
           rel="noreferrer"
         >
           <Send />
           Entrar em contato
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col gap-8">
         {info.map((info) => (

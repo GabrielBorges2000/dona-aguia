@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Img1 from '@/assets/img1.svg'
+import { Send } from 'lucide-react'
+import Link from 'next/link'
 
 export function Start() {
   return (
@@ -14,14 +16,15 @@ export function Start() {
         <p className="mb-8 w-96 text-center text-lg text-gray-500 lg:text-start lg:text-2xl">
           Um atelier exclusivo online, especializado em moda Infantil.
         </p>
-        <a
-          className="rounded-md bg-amber-400 px-8 py-3 font-semibold text-black hover:bg-amber-500 hover:text-white"
-          href="https://www.elo7.com.br/donaaguiababyekids"
+        <Link
+          className="mb-16 inline-flex flex-row items-center gap-4 rounded-md bg-amber-400 px-8 py-3 text-xl font-semibold text-black hover:bg-amber-500 hover:text-white"
+          href={`https://wa.me/${process.env.PHONE_WHATSAPP}?text=${process.env.MESSAGE_WHATSAPP}`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Ver Catálogo!
-        </a>
+          <Send />
+          Entrar em contato
+        </Link>
       </div>
       <div className="flex items-center justify-center pr-[5%] pt-8 lg:hidden">
         <div className="relative max-w-xs before:absolute before:left-[10%] before:top-[-14.8%] before:z-0 before:h-full before:w-full before:rounded-lg before:bg-amber-400 lg:mx-auto lg:mb-36 lg:w-9/12">
