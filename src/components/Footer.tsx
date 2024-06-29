@@ -1,4 +1,5 @@
 import { Boxes, Facebook, Instagram } from 'lucide-react'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -11,7 +12,9 @@ export function Footer() {
         </p>
       </div>
       <div className="flex flex-row gap-4">
-        <Instagram className="text-base font-bold text-white" size={32} />
+        <Link href="https://www.instagram.com/donaaguia_babyekids/">
+          <Instagram className="text-base font-bold text-white" size={32} />
+        </Link>
         <Facebook className="text-base font-bold text-white" size={32} />
         <Boxes className="text-base font-bold text-white" size={32} />
       </div>
