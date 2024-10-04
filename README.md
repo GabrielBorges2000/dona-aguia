@@ -22,7 +22,7 @@ Este projeto é uma landing page desenvolvida para a Dona Águia, uma loja espec
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/dona-aguia.git
+   git clone https://github.com/GabrielBorges2000/dona-aguia.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
